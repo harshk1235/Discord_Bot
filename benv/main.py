@@ -1,11 +1,10 @@
 from typing import Final
 import os
 import discord
-#from dotenv import load_dotenv
+
 from discord import Intents, Client, Message
 from discord.ext import commands
-#Loading token from somewhere safe
-#load_dotenv()
+
 TOKEN = os.environ.get("TOKEN")
 
 
