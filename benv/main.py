@@ -5,9 +5,10 @@ import discord
 from discord import Intents, Client, Message
 from discord.ext import commands
 
-TOKEN = os.environ.get("TOKEN")
 
+TOKEN = os.environ.get('TOKEN')
 
+print("TOKEN from Railway:", repr(TOKEN))
 # Bot setup
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="!", intents=intents)
