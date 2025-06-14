@@ -5,8 +5,9 @@ from dotenv import load_dotenv
 from discord import Intents, Client, Message
 from discord.ext import commands
 #Loading token from somewhere safe
-load_dotenv()
-TOKEN: Final[str] = os.getenv('BOT_TOKEN')
+#load_dotenv()
+TOKEN = os.environ.get("TOKEN")
+
 
 # Bot setup
 intents = discord.Intents.all()
