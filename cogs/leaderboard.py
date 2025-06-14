@@ -34,6 +34,8 @@ class Data_entry(commands.Cog):
     def __init__(self, bot:commands.Bot):
         self.bot=bot
         self.last_embed_message = None
+        self.bot.tree.add_command(self.leaderboard)
+        self.bot.tree.add_command(self.refresh_leaderboard)
     
     @app_commands.command()
     @app_commands.checks.has_permissions(administrator=True)
